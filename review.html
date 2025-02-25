@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beri Ulasan - UNISMUH</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo-unismuh.png" alt="Logo UNISMUH">
+        <h1>Ulasan Mahasiswa UNISMUH</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="review.html">Beri Ulasan</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="review-form">
+            <h2>Form Ulasan</h2>
+            <form id="form-ulasan" method="post" enctype="multipart/form-data">
+                <label for="nama">Nama (Boleh Inisial):</label>
+                <input type="text" id="nama" name="nama" required>
+                
+                <label for="fakultas">Fakultas:</label>
+                <select id="fakultas" name="fakultas" required>
+                    <option value="">-- Pilih Fakultas --</option>
+                    <option value="Fakultas Pertanian">Fakultas Pertanian</option>
+                    <option value="Fakultas Ekonomi dan Bisnis">Fakultas Ekonomi dan Bisnis</option>
+                    <option value="Fakultas Teknik">Fakultas Teknik</option>
+                    <option value="Fakultas Ilmu Sosial dan Ilmu Politik">Fakultas Ilmu Sosial dan Ilmu Politik</option>
+                    <option value="Fakultas Keguruan dan Ilmu Pendidikan">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                    <option value="Fakultas Kedokteran">Fakultas Kedokteran</option>
+                </select>
+                
+                <label for="ulasan">Ulasan:</label>
+                <textarea id="ulasan" name="ulasan" rows="4" required></textarea>
+                
+                <label for="gambar">Upload Bukti (opsional):</label>
+                <input type="file" id="gambar" name="gambar" accept="image/*">
+                
+                <button type="submit">Kirim Ulasan</button>
+            </form>
+            
+            <script src="frontend.js"></script> <!-- Tambahkan ini -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Ulasan Mahasiswa UNISMUH</p>
+    </footer>
+</body>
+</html>
